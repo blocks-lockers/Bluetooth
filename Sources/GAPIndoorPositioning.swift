@@ -300,6 +300,8 @@ internal extension GAPIndoorPositioning {
         /// (0 = Location Name is not present, 1 = Location Name is present)
         case locationName               = 0b01000000
         
+        public typealias AllCases = Set<Flag>
+        
         public static let allCases: Set<Flag> = [
             .coordinates,
             .coordinateSystemUsed,

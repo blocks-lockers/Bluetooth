@@ -20,6 +20,8 @@ public enum LowEnergyPhyOptions: UInt16, BitMaskOption {
     /// The Host prefers that S=8 coding be used when transmitting on the LE Coded PHY
     case s3         = 0b100
     
+    public typealias AllCases = Set<LowEnergyPhyOptions>
+    
     public static let allCases: Set<LowEnergyPhyOptions> = [.host,
                                                        .s2,
                                                        .s3]

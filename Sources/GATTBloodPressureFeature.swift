@@ -68,6 +68,8 @@ public struct GATTBloodPressureFeature: GATTCharacteristic {
         /// Multiple Bond Support
         case multipleBond = 0b100000
         
+        public typealias AllCases = Set<Feature>
+        
         public static let allCases: Set<Feature> = [
             .bodyMovement,
             .cuttFit,

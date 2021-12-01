@@ -109,6 +109,8 @@ extension HCICreateConnection {
         
         case valid = 0b10000000_00000000
         
+        public typealias AllCases = Set<ClockOffset>
+        
         public static let allCases: Set<ClockOffset> = [.valid]
     }
 }

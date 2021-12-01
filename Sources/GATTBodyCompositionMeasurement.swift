@@ -492,6 +492,8 @@ public struct GATTBodyCompositionMeasurement: GATTCharacteristic {
         /// Multiple Packet Measurement
         case multiplePacket = 0b1000000000000
         
+        public typealias AllCases = Set<Flag>
+        
         public static let allCases: Set<Flag> = [
              .measurementUnitSI,
              .measurementUnitImperial,

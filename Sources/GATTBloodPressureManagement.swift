@@ -255,6 +255,8 @@ public struct GATTBloodPressureMeasurement: GATTCharacteristic {
         /// Measurement Status present
         case measurementStatus = 0b10000
         
+        public typealias AllCases = Set<Flag>
+        
         public static let allCases: Set<Flag> = [.bloodPressureUnits, .timestamp, .pulseRate, .userID, .measurementStatus]
     }
     
@@ -313,6 +315,8 @@ public struct GATTBloodPressureMeasurement: GATTCharacteristic {
         case pulseRate = 0b1000
         
         case measurementPosition = 0b10000
+        
+        public typealias AllCases = Set<MeasurementStatus>
         
         public static let allCases: Set<MeasurementStatus> = [
             .bodyMovement,

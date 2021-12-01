@@ -20,6 +20,8 @@ public enum LowEnergyRxPhys: UInt8, BitMaskOption {
     /// The Host prefers to use the LE Coded receiver PHY (possibly among others)
     case hostUseLeCodedReceiverPhy   = 0b100
     
+    public typealias AllCases = Set<LowEnergyRxPhys>
+    
     public static let allCases: Set<LowEnergyRxPhys> = [.hostUseLe1MReceiverPhy,
                                                    .hostUseLe2MReceiverPhy,
                                                    .hostUseLeCodedReceiverPhy]

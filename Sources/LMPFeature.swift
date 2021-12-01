@@ -173,6 +173,8 @@ public enum LMPFeature: UInt64, BitMaskOption {
     // Extended features
     case extendedFeatures = 0b10000000_00000000_00000000_00000000_00000000_00000000_00000000_00000000
     
+    public typealias AllCases = Set<LMPFeature>
+    
     public static let allCases: Set<LMPFeature> = [
         .slotPackets3,
         .slotPackets5,

@@ -64,6 +64,8 @@ extension GATTIndoorPositioningConfiguration {
         //Location Name available in the GATT database
         case locationName = 0b100000
         
+        public typealias AllCases = Set<Configuration>
+        
         public static let allCases: Set<Configuration> = [
             .coordinates,
             .coordinateSystemUsed,

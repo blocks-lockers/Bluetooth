@@ -139,6 +139,8 @@ public extension HCILESetEventMask {
         /// LE Channel Selection Algorithm Event
         case channelSelectionAlgorithm                  = 0b1000000000000000000
         
+        public typealias AllCases = Set<Event>
+        
         public static let allCases: Set<Event> = [
             .connectionComplete,
             .advertisingReport,

@@ -58,6 +58,8 @@ public extension GAPLERole {
         case central = 0b01
         case peripheral = 0b10
         
+        public typealias AllCases = Set<Role>
+        
         public static let allCases: Set<Role> = [.central, .peripheral]
     }
 }

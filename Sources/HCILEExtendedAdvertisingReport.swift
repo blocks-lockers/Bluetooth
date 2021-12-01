@@ -252,6 +252,8 @@ public struct HCILEExtendedAdvertisingReport: HCIEventParameter {
         /// Data status: Reserved for future use
         case dataStatusReserved             = 0b0000000001100000
         
+        public typealias AllCases = Set<EventType>
+        
         /// All enum cases
         public static let allCases: Set<EventType> = [
             .connectableAdvertising,

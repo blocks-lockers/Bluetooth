@@ -64,6 +64,8 @@ extension GATTCurrentTime {
         /// Change of DST (daylight savings time)
         case dstChange = 0b1000
         
+        public typealias AllCases = Set<Flag>
+        
         public static let allCases: Set<Flag> = [
             .manualTimeUpdate,
             .externalReference,
