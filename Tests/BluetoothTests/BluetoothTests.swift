@@ -56,7 +56,7 @@ final class BluetoothTests: XCTestCase {
         let level = SecurityLevel()
         
         XCTAssertTrue(level < .high)
-        XCTAssertTrue(.low < .high)
+        XCTAssertTrue(SecurityLevel.low < .high)
     }
     
     func testCompanyIdentifier() {
